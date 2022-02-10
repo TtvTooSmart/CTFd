@@ -18,16 +18,7 @@ from CTFd.utils.plugins import (
 from CTFd.utils.plugins import register_script as utils_register_plugin_script
 from CTFd.utils.plugins import register_stylesheet as utils_register_plugin_stylesheet
 
-from CTFd.plugins.flags import get_flag_class
-from CTFd.models import db, Solves, Fails, Flags, Challenges, Files, Tags, Teams
-from CTFd import utils
-from CTFd.utils.user import is_admin
-from CTFd.utils.decorators import admins_only
-import json
-import datetime
-from flask import jsonify, session, request
-from flask_sqlalchemy import SQLAlchemy
-import sys
+
 
 Menu = namedtuple("Menu", ["title", "route"])
 
