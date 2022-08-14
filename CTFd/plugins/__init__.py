@@ -18,8 +18,6 @@ from CTFd.utils.plugins import (
 from CTFd.utils.plugins import register_script as utils_register_plugin_script
 from CTFd.utils.plugins import register_stylesheet as utils_register_plugin_stylesheet
 
-
-
 Menu = namedtuple("Menu", ["title", "route"])
 
 

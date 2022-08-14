@@ -359,12 +359,7 @@ function importConfig(event) {
         target: pg,
         width: 100
       });
-      setTimeout(function() {
-        pg.modal("hide");
-      }, 500);
-      setTimeout(function() {
-        window.location.reload();
-      }, 700);
+      location.href = CTFd.config.urlRoot + "/admin/import";
     }
   });
 }
@@ -410,6 +405,7 @@ $(() => {
     {
       lineNumbers: true,
       lineWrapping: true,
+      readOnly: true,
       mode: { name: "javascript", json: true }
     }
   );
